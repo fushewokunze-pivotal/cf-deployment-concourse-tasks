@@ -5,9 +5,20 @@ RUN \
   apt-get -y install \
     build-essential \
     git \
+    libreadline6 \
+    libreadline6-dev \
+    libsqlite3-dev \
+    libssl-dev \
+    libxml2-dev \
+    libxslt-dev \
+    libyaml-dev \
+    openssl \
+    software-properties-common \
+    sqlite \
     unzip \
     wget \
-    software-properties-common && \
+    zlib1g-dev \
+    zlibc && \
   add-apt-repository ppa:brightbox/ruby-ng -y && \
   apt-get update && \
   apt-get -y install \
